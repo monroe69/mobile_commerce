@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_const, deprecated_member_use, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 class CartPage extends StatefulWidget {
@@ -15,7 +17,7 @@ class _CartPageState extends State<CartPage> {
       body: SafeArea(
           child: ListView(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 15,
           ),
           Column(
@@ -26,8 +28,8 @@ class _CartPageState extends State<CartPage> {
                       onPressed: () {
                         Navigator.pop(context);
                       },
-                      icon: Icon(Icons.arrow_back)),
-                  Padding(
+                      icon: const Icon(Icons.arrow_back)),
+                  const Padding(
                       padding: EdgeInsets.only(left: 120),
                       child: Text(
                         'Cart',
@@ -44,26 +46,26 @@ class _CartPageState extends State<CartPage> {
               Container(
                 width: 200,
                 height: 100,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(16),
                         topRight: Radius.circular(16)),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                       image: AssetImage('assets/prdk1.png'),
                     )),
               ),
               Container(
-                margin: EdgeInsets.all(5),
+                margin: const EdgeInsets.all(5),
                 child: Text(
                   'name',
                   style: TextStyle(color: Colors.amber[300]),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 5, right: 5),
-                child: Text(
+                margin: const EdgeInsets.only(left: 5, right: 5),
+                child: const Text(
                   'price',
-                  style: TextStyle(fontSize: 12, color: Colors.black),
+                  style: const TextStyle(fontSize: 12, color: Colors.black),
                 ),
               ),
             ],
@@ -83,7 +85,7 @@ class _CartPageState extends State<CartPage> {
                         width: 30,
                         height: 30,
                         color: Colors.black,
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                           size: 18,
                           color: Colors.white,
@@ -95,7 +97,7 @@ class _CartPageState extends State<CartPage> {
                         width: 30,
                         height: 30,
                         color: Colors.black,
-                        child: Icon(
+                        child: const Icon(
                           Icons.remove,
                           size: 18,
                           color: Colors.white,
@@ -110,12 +112,12 @@ class _CartPageState extends State<CartPage> {
                   child: RaisedButton(
                     onPressed: () {},
                     color: Colors.black,
-                    child: Icon(
+                    child: const Icon(
                       Icons.add_shopping_cart,
                       size: 18,
                       color: Colors.white,
                     ),
-                    shape: RoundedRectangleBorder(
+                    shape: const RoundedRectangleBorder(
                         borderRadius: BorderRadius.only(
                             bottomLeft: Radius.circular(16),
                             bottomRight: Radius.circular(16))),
@@ -128,23 +130,23 @@ class _CartPageState extends State<CartPage> {
               Container(
                 width: 200,
                 height: 100,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(16),
+                decoration: const BoxDecoration(
+                    borderRadius: const BorderRadius.only(
+                        topLeft: const Radius.circular(16),
                         topRight: Radius.circular(16)),
-                    image:
-                        DecorationImage(image: AssetImage('assets/prdk2.png'))),
+                    image: const DecorationImage(
+                        image: AssetImage('assets/prdk2.png'))),
               ),
               Container(
-                margin: EdgeInsets.all(5),
+                margin: const EdgeInsets.all(5),
                 child: Text(
                   'name',
                   style: TextStyle(color: Colors.amber[300]),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 5, right: 5),
-                child: Text(
+                margin: const EdgeInsets.only(left: 5, right: 5),
+                child: const Text(
                   'price',
                   style: TextStyle(fontSize: 12, color: Colors.black),
                 ),
@@ -166,7 +168,7 @@ class _CartPageState extends State<CartPage> {
                         width: 30,
                         height: 30,
                         color: Colors.black,
-                        child: Icon(
+                        child: const Icon(
                           Icons.add,
                           size: 18,
                           color: Colors.white,
@@ -178,7 +180,7 @@ class _CartPageState extends State<CartPage> {
                         width: 30,
                         height: 30,
                         color: Colors.black,
-                        child: Icon(
+                        child: const Icon(
                           Icons.remove,
                           size: 18,
                           color: Colors.white,
@@ -190,20 +192,21 @@ class _CartPageState extends State<CartPage> {
               ),
               SizedBox(
                   width: 100,
+                  // ignore: deprecated_member_use
                   child: RaisedButton(
                     onPressed: () {},
                     color: Colors.black,
-                    child: Icon(
+                    child: const Icon(
                       Icons.add_shopping_cart,
                       size: 18,
                       color: Colors.white,
                     ),
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(16),
-                            bottomRight: Radius.circular(16))),
+                    shape: const RoundedRectangleBorder(
+                        borderRadius: const BorderRadius.only(
+                            bottomLeft: const Radius.circular(16),
+                            bottomRight: const Radius.circular(16))),
                   )),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
               Column(
@@ -212,7 +215,7 @@ class _CartPageState extends State<CartPage> {
                     backgroundColor: Colors.amber[300],
                     foregroundColor: Colors.black,
                     onPressed: () {},
-                    label: Text(
+                    label: const Text(
                       '                        Check Out                        ',
                     ),
                   ),

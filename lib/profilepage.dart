@@ -1,4 +1,7 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
+import 'package:mobile_commerce/login_page.dart';
 
 class ProfilePage extends StatefulWidget {
   const ProfilePage({Key? key}) : super(key: key);
@@ -120,7 +123,11 @@ class _ProfilePageState extends State<ProfilePage> {
                     fontWeight: FontWeight.w500),
               ),
               leading: Icon(Icons.logout_outlined),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return LoginPage();
+                }));
+              },
             ),
             SizedBox(
               height: 50,

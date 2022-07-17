@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:mobile_commerce/homepage.dart';
 
@@ -26,7 +28,7 @@ class LoginPage extends StatelessWidget {
                   'assets/demibumi_logo.png',
                   height: 150,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 50,
                 ),
                 Row(
