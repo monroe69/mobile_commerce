@@ -109,18 +109,19 @@ class _CartPageState extends State<CartPage> {
               ),
               SizedBox(
                   width: 100,
-                  child: RaisedButton(
+                  child: ElevatedButton(
                     onPressed: () {},
-                    color: Colors.black,
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.black,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(16),
+                                bottomRight: Radius.circular(16)))),
                     child: const Icon(
                       Icons.add_shopping_cart,
                       size: 18,
                       color: Colors.white,
                     ),
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                            bottomLeft: Radius.circular(16),
-                            bottomRight: Radius.circular(16))),
                   ))
             ],
           ),
@@ -193,18 +194,30 @@ class _CartPageState extends State<CartPage> {
               SizedBox(
                   width: 100,
                   // ignore: deprecated_member_use
-                  child: RaisedButton(
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.black,
+                        shape: const RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(16),
+                                bottomRight: Radius.circular(16)))),
                     onPressed: () {},
-                    color: Colors.black,
                     child: const Icon(
                       Icons.add_shopping_cart,
                       size: 18,
                       color: Colors.white,
                     ),
-                    shape: const RoundedRectangleBorder(
-                        borderRadius: const BorderRadius.only(
-                            bottomLeft: const Radius.circular(16),
-                            bottomRight: const Radius.circular(16))),
+                    // onPressed: () {},
+                    // color: Colors.black,
+                    // child: const Icon(
+                    //   Icons.add_shopping_cart,
+                    //   size: 18,
+                    //   color: Colors.white,
+                    // ),
+                    // shape: const RoundedRectangleBorder(
+                    //     borderRadius: const BorderRadius.only(
+                    //         bottomLeft: const Radius.circular(16),
+                    //         bottomRight: const Radius.circular(16))),
                   )),
               const SizedBox(
                 height: 100,
